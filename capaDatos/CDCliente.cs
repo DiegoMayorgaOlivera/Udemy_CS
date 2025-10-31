@@ -7,7 +7,11 @@ namespace capaDatos
 {
     public class CDCliente
     {
+
+        /*Aquí establecemos la ruya y credenciales de la Base de Datos, previamente configurados en HeidiSQL*/
         string CadenaConexion = "Server=localhost;User=root;Password=12345678;Port=3306;database=curso_cs";
+
+    /*Se realiza la prueba de conexión con la base de datos.*/
 
         public void PruebaConexion()
         {
@@ -27,6 +31,9 @@ namespace capaDatos
 
         }
 
+
+        /*Aquí creamos el método de Crear un Registro*/
+
         public void Crear(CECliente cE)
         {
             MySqlConnection mySqlConnection = new(CadenaConexion);
@@ -40,6 +47,7 @@ namespace capaDatos
             
         }
 
+        /*Aquí creamos el método de Editar un Registro*/
         public void Editar(CECliente cE)
         {
             MySqlConnection mySqlConnection = new(CadenaConexion);
@@ -53,7 +61,7 @@ namespace capaDatos
 
         }
 
-
+        /*Aquí creamos el método de Eliminar un Registro*/
         public void Eliminar(CECliente cE)
         {
             MySqlConnection mySqlConnection = new(CadenaConexion);
@@ -67,7 +75,7 @@ namespace capaDatos
 
         }
 
-
+        /*Aquí creamos el Método Listar todos los Registros*/
         public DataSet Listar()
         {
             MySqlConnection mySqlConnection = new(CadenaConexion);

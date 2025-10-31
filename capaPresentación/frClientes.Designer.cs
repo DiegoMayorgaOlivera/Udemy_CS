@@ -165,7 +165,7 @@
             gridDatos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             gridDatos.Location = new Point(348, 48);
             gridDatos.Name = "gridDatos";
-            gridDatos.Size = new Size(685, 281);
+            gridDatos.Size = new Size(451, 281);
             gridDatos.TabIndex = 6;
             gridDatos.CellDoubleClick += gridDatos_CellDoubleClick;
             // 
@@ -173,7 +173,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1070, 450);
+            ClientSize = new Size(806, 450);
             Controls.Add(gridDatos);
             Controls.Add(btnGuardar);
             Controls.Add(btnEliminar);
